@@ -43,16 +43,20 @@ OUTPUT: values provided by the c++ program to the simulator
 ## Results
 The below outputs show the `RMSE` (root mean square error) when the filter is run on Datasets 1 and 2 in the Simulator. The `RED` circles are lidar measurements and the `BLUE` circles are radar measurements. The `GREEN` markers are the car's position as estimated by the Kalman filter. 
 
-1. Dataset 1
+### 1. Dataset 1
 
 ![alt text][image1]
+
+### Path taken by the vehicle
 
 ![alt text][image2]
 
 
-2. Dataset 2
+### 2. Dataset 2
 
 ![alt text][image3]
+
+### Path taken by the vehicle
 
 ![alt text][image4]
 

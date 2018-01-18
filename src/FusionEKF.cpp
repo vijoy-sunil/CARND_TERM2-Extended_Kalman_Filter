@@ -83,7 +83,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 	  //Initialize state.
 	  x << measurement_pack.raw_measurements_[0], measurement_pack.raw_measurements_[1], 0, 0;
 	}
-	
+	previous_timestamp_ = measurement_pack.timestamp_;
     // Initialize ekf_ 
     MatrixXd Q(4,4);
     ekf_.Init( x, P_, F_, 

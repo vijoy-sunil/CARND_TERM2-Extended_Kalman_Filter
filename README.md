@@ -1,7 +1,12 @@
+[image1]: ./output_images/sim_run1.PNG
+[image2]: ./output_images/sim_run2.PNG
+[image3]: ./output_images/sim2_run1.PNG
+[image4]: ./output_images/sim2_run2.PNG
+
 ## Project: Extended Kalman Filter
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-This project utilizes a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. 
+This project implements a kalman filter in C++ to estimate the state of a moving object of interest with noisy lidar and radar measurements. Input data consisting of laser measurements (given directly as x and y positions, with some known uncertainty) and radar measurements (given as radius, angle, and radial velocity relative to some fixed measurement site, with some known uncertainty) are combined with a motion model to track a vehicle with much better accuracy than what can be achieved with individual measurements.
 
 The project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
@@ -35,7 +40,23 @@ OUTPUT: values provided by the c++ program to the simulator
 ["rmse_vy"]
 
 ---
+## Results
+The below outputs show the `RMSE` (root mean square error) when the filter is run on Datasets 1 and 2 in the Simulator. The `RED` circles are lidar measurements and the `BLUE` circles are radar measurements. The `GREEN` markers are the car's position as estimated by the Kalman filter. 
 
+1. Dataset 1
+
+![alt text][image1]
+
+![alt text][image2]
+
+
+2. Dataset 2
+
+![alt text][image3]
+
+![alt text][image4]
+
+---
 ## Other Important Dependencies
 
 * cmake >= 3.5

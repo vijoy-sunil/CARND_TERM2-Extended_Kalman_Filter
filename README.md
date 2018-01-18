@@ -1,5 +1,5 @@
-# Extended Kalman Filter Project Starter Code
-Self-Driving Car Engineer Nanodegree Program
+## Project: Extended Kalman Filter
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 This project utilizes a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. 
 
